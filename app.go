@@ -149,6 +149,8 @@ func whoamiHandler(w http.ResponseWriter, req *http.Request) {
 		}
 	}
 
+	_, _ = fmt.Fprintln(w, "SimpleOps:", "0.0.1")
+
 	hostname, _ := os.Hostname()
 	_, _ = fmt.Fprintln(w, "Hostname:", hostname)
 
