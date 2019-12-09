@@ -149,7 +149,7 @@ func whoamiHandler(w http.ResponseWriter, req *http.Request) {
 		}
 	}
 
-	_, _ = fmt.Fprintln(w, "Dunzo:", "0.2.8")
+	_, _ = fmt.Fprintln(w, "Dunzo:", "0.2.9-demo")
 
 	hostname, _ := os.Hostname()
 	_, _ = fmt.Fprintln(w, "Hostname:", hostname)
